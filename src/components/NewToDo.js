@@ -40,7 +40,8 @@ export default function NewToDo({id, title="ToDoTitle", todo="Info", showed=fals
                 required
                 id="todotitle"
                 label="待辦標題"
-                defaultValue={todoTitle.value}
+                placeholder="Title"
+                {...todoTitle}
               />
               <p>title</p>
               <div className="br"></div>
@@ -49,7 +50,8 @@ export default function NewToDo({id, title="ToDoTitle", todo="Info", showed=fals
                 required
                 id="todoinfo"
                 label="待辦資訊"
-                defaultValue={todoInfo.value}
+                placeholder="Info"
+                {...todoInfo}
               />
               <p>information</p>
             </div>
